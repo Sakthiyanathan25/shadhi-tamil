@@ -25,6 +25,7 @@ export const AuthContextProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
+
     name: "",
     email: "",
     phone: "",
@@ -34,7 +35,6 @@ export const AuthContextProvider = ({ children }) => {
     dob: "",
     confirmPassword: "",
     profileDp: "",
-    phone: "",
     caste: "",
     height: "",
     weight: "",
@@ -48,7 +48,7 @@ export const AuthContextProvider = ({ children }) => {
     salary: "",
     religion: "",
     cigOrAlcohol: "",
-    address: "",
+    
   });
 
   const formDataLength = Object.keys(formData).length;
